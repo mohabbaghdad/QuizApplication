@@ -1,0 +1,253 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/card" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cheak Result"
+        android:id="@+id/cheak_answer"
+        android:textAllCaps="true"
+        android:background="#303f9f"
+        android:textColor="#ffff"
+        android:onClick="submit"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginLeft="8dp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:inputType="textCapWords"
+            android:id="@+id/EditText"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q2) real madrid is "
+            android:textColor="#900000"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioG1">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/spain"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="spanshClub "
+                        android:checked="false"
+                        android:paddingLeft="24dp"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginRight="24dp"
+                        android:onClick="Q2RadioButtom"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/englishClub"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:checked="false"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="24dp"
+                        android:text="English Club "
+                        android:fontFamily="sans-serif-light"
+                        android:onClick="Q2RadioButtom"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q3) What 3 states of matter "
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#900000"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/solid"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Solid"
+                android:paddingLeft="24dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginRight="24dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/liquid"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Liquid"
+                android:paddingLeft="24dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginRight="24dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/gas"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Gas"
+                android:paddingLeft="24dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginRight="24dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/icecream"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="IceCream"
+                android:paddingLeft="24dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginRight="24dp" />
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#900000"
+                android:text="Q4) What color does the sky often appear when itrains?"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioG4">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/grey"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="grey "
+                    android:checked="false"
+                    android:paddingLeft="24dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginRight="24dp"
+                    android:onClick="Q4RadioButtom"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/red"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:checked="false"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:text="Red "
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="Q4RadioButtom"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:checked="false"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:text="black "
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="Q4RadioButtom"/>
+            </RadioGroup>
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#900000"
+                    android:text="Q5) The mass can be measured by"
+                    android:fontFamily="sans-serif-light"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioG5">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/meter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="meter "
+                    android:checked="false"
+                    android:paddingLeft="24dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginRight="24dp"
+                    android:onClick="Q5RadioButtom"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/kg"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:checked="false"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:text="kg "
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="Q5RadioButtom"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/volt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:checked="false"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="24dp"
+                    android:text="Volt "
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="Q5RadioButtom"/>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
